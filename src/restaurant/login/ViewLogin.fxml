@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1251.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.login.ViewLoginController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #9f9f9f;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="470.0" layoutY="188.0" prefHeight="392.0" prefWidth="312.0" style="-fx-background-color: #9d9d9d; -fx-background-radius: 10 10 10 10;">
+               <children>
+                  <Pane prefHeight="113.0" prefWidth="312.0" style="-fx-background-radius: 10 10 10 10;">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 10 10 0 0;">
+                           <image>
+                              <Image url="@../res/background.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="107.0" prefHeight="288.0" prefWidth="312.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10 10 10 10;">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="288.0" prefWidth="313.0">
+                           <children>
+                              <JFXTextField alignment="CENTER" focusColor="BLACK" focusTraversable="false" labelFloat="true" promptText="Login">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" top="60.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXPasswordField alignment="CENTER" focusColor="BLACK" focusTraversable="false" labelFloat="true" promptText="Senha">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" top="20.0" />
+                                 </VBox.margin>
+                              </JFXPasswordField>
+                              <JFXButton buttonType="RAISED" onAction="#setViewAccount" prefHeight="29.0" prefWidth="166.0" style="-fx-background-color: #E73835;" text="Entrar" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <Label text="Cadastrar" textFill="#00a9b2">
+                                 <VBox.margin>
+                                    <Insets top="55.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="25.5" radius="13.375" width="30.0" />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
